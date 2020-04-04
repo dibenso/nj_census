@@ -66,6 +66,9 @@ int main(int argc, char **argv) {
     i++;
   }
 
+  // close the datafile
+  fclose(fp);
+
   // prompts user to enter a year and prints the corresponding population count
   input_loop(years, populations);
 
